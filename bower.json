@@ -1,10 +1,10 @@
 {
-  "name": "Процесс",
+  "name": "Процес",
   "version": "0.0.1",
   "authors": [
     "Aleksandr Solovey <xelbox@gmail.com>"
   ],
-  "description": "Редактор простых бизнес процессов",
+  "description": "Редактор простих бізнес процесів",
   "moduleType": [
     "amd"
   ],

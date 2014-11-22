@@ -1,5 +1,5 @@
 /*
-Колекция
+Модель одного блоку графу
 */
 define([
     'jquery',
@@ -12,7 +12,8 @@ define([
     		type: 'square',
             source: "Створіть новий контент використовуючи markdown.",
             text: "Новий блок Натисніть, щоб додати контент.",
-            url: "http://placehold.it/512x256"
+            url: "http://placehold.it/512x256",
+            order: 0
     	}
     });
 

@@ -1,5 +1,5 @@
 /*
-Проекты
+Відображення одного блоку
 */
 define([
     'jquery',
@@ -21,6 +21,10 @@ define([
             'click .btn-save': 'save'
         },
 
+        initialize: function(options){
+            this.project = options.project;
+        },
+
         edit: function(e) {
             e.preventDefault();
             e.stopPropagation();
@@ -34,14 +38,11 @@ define([
             e.stopPropagation();
             if (this.$('.editor').is(':visible')){
                 this.$('.render, .editor').toggle();
-                console.log({
-                    'source': this.$('textarea').val(),
-                    'text': marked(this.$('textarea').val())
-                });
                 this.model.set({
                     'source': this.$('textarea').val(),
                     'text': marked(this.$('textarea').val())
-                });
+                }, {silent: true});
+                this.project.save();
             }
         },
 

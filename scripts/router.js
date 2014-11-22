@@ -9,7 +9,7 @@ define([
 
             routes: {
                 "": "reset",
-                ":id": "open"  // #search/kiwis
+                ":id": "open"
             },
 
             reset: function(){

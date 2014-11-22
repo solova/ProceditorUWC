@@ -6,16 +6,22 @@ require.config({ //налаштування requirejs
 		jqueryui: '../vendor/jquery-ui/jquery-ui',
 		underscore: '../vendor/lodash/lodash',
 		backbone: '../vendor/backbone/backbone',
+		bootstrap: '../vendor/bootstrap/bootstrap',
 		localstorage: "../vendor/backbone/backbone.localstorage",
 		marked: "../vendor/marked/marked",
 		templates: '../templates',
-		text: '../vendor/requirejs/text'
+		text: '../vendor/requirejs/text',
+		jspdf: '../vendor/jspdf/jspdf'
 	},
 	shim: {
         "jqueryui": {
             exports: "$",
             deps: ['jquery']
-        }
+        },
+        "bootstrap" : { 
+        	deps :['jquery'] 
+        },
+        "jspdf": {}
     }
 });
 

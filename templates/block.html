@@ -1,10 +1,6 @@
-<li class="block <%= type %>">
+<li class="block <%= type %>" data-id="<%= id %>" data-order="<%= order %>">
 	<div class="render">
-		<% if (type=='image' || type=='smile'){ %>
-		<img src="<%= text %>" alt="" />
-		<% } else { %>
 		<%= text %>
-		<% } %>
 	</div>
 	<div class="editor">
 		<a href="#" class="btn btn-success btn-save btn-xs"><i class="fa fa-check"></i></a>

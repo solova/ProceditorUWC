@@ -1,5 +1,5 @@
 /*
-Колекция
+Колекція блоків
 */
 define([
     'jquery',
@@ -12,6 +12,9 @@ define([
     	model: block,
         initialize: function () {
 
+        },
+        comparator: function(item) {
+            return item.get('order');
         }
     });
 

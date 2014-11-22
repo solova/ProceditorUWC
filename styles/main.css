@@ -46,9 +46,10 @@ body
 {
     border-radius: 50%;
 }
-.block.image
+.block.image img
 {
     padding: 0;
+    max-width: 100%;
 }
 
 .block:after
@@ -99,6 +100,10 @@ body
     background-color: transparent;
 }
 
+.toolbar{
+    position: fixed;
+}
+
 .ui-sortable-helper .block:after
 {
     visibility: hidden;
@@ -107,4 +112,9 @@ body
 .ui-sortable :last-child .block:after
 {
     content: '';
+}
+
+.modal .modal-body {
+    max-height: 420px;
+    overflow-y: auto;
 }
