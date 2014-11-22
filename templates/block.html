@@ -1,0 +1,13 @@
+<li class="block <%= type %>">
+	<div class="render">
+		<% if (type=='image' || type=='smile'){ %>
+		<img src="<%= text %>" alt="" />
+		<% } else { %>
+		<%= text %>
+		<% } %>
+	</div>
+	<div class="editor">
+		<a href="#" class="btn btn-success btn-save btn-xs"><i class="fa fa-check"></i></a>
+		<textarea><%= source %></textarea>
+	</div>
+</li>

@@ -1,0 +1,21 @@
+{
+  "name": "Процесс",
+  "version": "0.0.1",
+  "authors": [
+    "Aleksandr Solovey <xelbox@gmail.com>"
+  ],
+  "description": "Редактор простых бизнес процессов",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "dependencies": {
+      "backbone": "*",
+      "bootstrap": "*",
+      "fontawesome": "*",
+      "jquery": "*",
+      "lodash": "*",
+      "requirejs": "*",
+      "requirejs-text": "*"
+  }
+}

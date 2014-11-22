@@ -1,0 +1,110 @@
+html
+{
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+}
+
+#canva
+{
+    min-height: 100%;
+    padding: 1em;
+
+    border-radius: 1em;
+    background-color: white;
+}
+
+.project-name
+{
+    font-size: .75em;
+
+    text-align: center;
+
+    color: #aaa;
+}
+
+.block
+{
+    position: relative;
+
+    max-width: 512px;
+    margin: 0 auto 33px auto;
+    padding: 1.5em 0;
+
+    cursor: move;
+    text-align: center;
+
+    color: white;
+    background-color: #2a9fd6;
+}
+.block.circle
+{
+    border-radius: 50%;
+}
+.block.image
+{
+    padding: 0;
+}
+
+.block:after
+{
+    font-size: x-large;
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    display: block;
+
+    margin-left: -7px;
+
+    content: '\25BC';
+
+    color: #f80;
+}
+.block .editor
+{
+    position: relative;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+}
+.block .editor .btn-save
+{
+    position: absolute;
+    top: 0;
+    right: 1em;
+}
+.block .editor textarea
+{
+    font-family: monospace;
+
+    width: 100%;
+    height: 100%;
+    padding: 0 1.5em;
+
+    resize: none;
+    text-align: center;
+
+    color: white;
+    border: 0 none;
+    outline: none;
+    background-color: transparent;
+}
+
+.ui-sortable-helper .block:after
+{
+    visibility: hidden;
+}
+
+.ui-sortable :last-child .block:after
+{
+    content: '';
+}
